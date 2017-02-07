@@ -1,0 +1,56 @@
+﻿<Window x:Class="USD.ListView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:USD"
+        xmlns:sys="clr-namespace:System;assembly=mscorlib"
+        mc:Ignorable="d"
+        Title="Список исследований" MinWidth="800" MinHeight="600"
+        Background="#EFECEC">
+    <Grid Margin="30,0,15,0">
+        <Grid.RowDefinitions>
+            <RowDefinition MaxHeight="28" MinHeight="28" />
+            <RowDefinition MaxHeight="42" MinHeight="42" />
+            <RowDefinition />
+            <RowDefinition MaxHeight="42" MinHeight="42" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        <DockPanel Grid.Row="0">
+            <Label>Поиск:</Label>
+            <TextBox Margin="5,3">
+                <TextBox.Text>
+                    <Binding Path="SearchPattern" Mode="TwoWay" UpdateSourceTrigger="PropertyChanged" />
+                </TextBox.Text>
+            </TextBox>
+        </DockPanel>
+        <StackPanel Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Right">
+            <Button MinWidth="100" Margin="10,3" Command="{Binding ExportCommand}">Открыть в Word</Button>
+            <Button MinWidth="100" Margin="10,3" Command="{Binding DeleteCommand}">Удалить</Button>
+        </StackPanel>
+        <DataGrid Grid.Row="2" CanUserAddRows="False" CanUserDeleteRows="False" IsManipulationEnabled="False"
+                  CanUserSortColumns="True" CanUserResizeRows="True"
+                  ItemsSource="{Binding List}" SelectedItem="{Binding Path=SelectedItem, Mode=TwoWay}"
+                  AutoGenerateColumns="False" HorizontalScrollBarVisibility="Hidden">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Дата визита" Binding="{Binding VisitDate, StringFormat={}{0:dd.MM.yyyy}}" />
+                <DataGridTextColumn Header="ФИО" Binding="{Binding FIO}" />
+                <DataGridTextColumn Header="Год рождения" Binding="{Binding BirthYear}" />
+                <DataGridTemplateColumn Header="Заключение" Width="100*">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <TextBlock Text="{Binding Conclusion}" TextWrapping="WrapWithOverflow"
+                                       VerticalAlignment="Center" />
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+            </DataGrid.Columns>
+        </DataGrid>
+        <StackPanel Grid.Row="3" Orientation="Horizontal" HorizontalAlignment="Right">
+            <Button Name="Import" MinWidth="120" Margin="10,3" Click="Import_OnClick">Импорт даных в БД</Button>
+            <Button Name="Export" MinWidth="120" Margin="10,3" Click="Export_OnClick">Экспорт БД</Button>
+        </StackPanel>
+    </Grid>
+</Window>

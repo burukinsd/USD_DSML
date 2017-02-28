@@ -1,0 +1,15 @@
+form-elements:
+ - type : textbox
+   id:  TextBoxId1
+   caption: TextBoxLabel1
+   size: 4
+   form-elements:
+ - type : textbox
+   id:  TextBoxId2
+   caption: TextBoxLabel2
+   size: 4
+   form-elements:
+ - type : textbox
+   id:  TextBoxId3
+   caption: TextBoxLabel3
+   size: 4

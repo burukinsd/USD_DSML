@@ -6,27 +6,39 @@
     xmlns:local="clr-namespace:WpfApplication1"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:templates="clr-namespace:WpfApplication1.Views.Templates"
-    
+    xmlns:viewModels="clr-namespace:WpfApplication1.ViewModels"
     Title="MainWindow"
     Width="525"
     Height="350"
+    d:DataContext="{d:DesignInstance viewModels:MainWindowViewModel}"
     mc:Ignorable="d">
-    <!--<Window.DataContext>
-        <viewModels:MainWindowViewModel />
-    </Window.DataContext>-->
 
-    <StackPanel>
-        <ListView
-            x:Name="listcontrols"
-            Height="317"
-            ItemsSource="{Binding ControlsList}">
-            <ListView.ItemTemplate>
-                <DataTemplate>
-                    <templates:TextBoxControl  />
-                </DataTemplate>
-            </ListView.ItemTemplate>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="50" />
+        </Grid.RowDefinitions>
 
-        </ListView>
-    </StackPanel>
+
+        <ScrollViewer HorizontalScrollBarVisibility="Visible">
+            <Grid Name="DataGrid" Grid.Row="0">
+                <!--<DataGrid DataContext="{Binding UIControlsList}" />-->
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+
+            </Grid>
+        </ScrollViewer>
+
+        <Button
+            Grid.Row="1"
+            Width="100"
+            Height="40"
+            Click="GetData_OnClick"
+            Content="GetData" />
+
+    </Grid>
+
+
 </Window>
 

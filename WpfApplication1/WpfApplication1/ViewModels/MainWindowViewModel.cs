@@ -26,25 +26,87 @@ namespace WpfApplication1.ViewModels
         }
         #endregion INotifyPropertyChanged
 
-        //пример textBoxControl'a в который биндятся данные из yaml
-        public TextBoxControlViewModel TextBoxEx { get; set; }
-        public ObservableCollection<TextBoxControlViewModel> ControlsList { get; set; }
+        //коллекция UI контролоов откуда в будущем будем брать введенную информацию
+        //private List<Object> _uiControlsList = new List<object>();
 
-        public MainWindowViewModel()
-        {
-            //список моделей с данными, получаемых из yaml
-            var controls = YamlDriver.GetObjects(@"..\..\Resources\YamlConfig.yaml");
+        //public List<Object> UIControlsList
+        //{
+        //    get { return _uiControlsList; }
+        //    set
+        //    {
+        //        _uiControlsList = value;
+        //        OnPropertyChanged(nameof(UIControlsList));
+        //    }
+        //}
+        
 
-            ControlsList = new ObservableCollection<TextBoxControlViewModel>();
+        //public MainWindowViewModel()
+        //{
 
-            //только текстбоксы в коллекции
-            foreach (var control in controls)
-            {
-                TextBoxEx = new TextBoxControlViewModel(control as TextBoxModel);
-                ControlsList.Add(TextBoxEx);
-            }
+        //    var controls = YamlDriver.GetObjects(@"..\..\Resources\YamlConfig.yaml");
 
-        }
+        //    var currentRow = 0;
 
+        //    foreach (var control in controls)
+        //    {
+
+        //        switch (control.GetType().Name)
+        //        {
+        //            case "TextBoxModel":
+        //                {
+        //                    //создаем TextBoxControl
+        //                    var textBoxControl = new TextBoxControl();
+        //                    var textBoxControlViewModel = new TextBoxControlViewModel(control as TextBoxModel);
+        //                    textBoxControl.DataContext = textBoxControlViewModel;
+
+        //                    //пихаем TextBoxControl в коллекцию
+        //                    _uiControlsList.Add(textBoxControl);
+
+        //                    //пихаем TextBoxControl на форму
+        //                    //DataGrid.RowDefinitions.Add(new RowDefinition());
+        //                    //DataGrid.Children.Add(textBoxControl);
+        //                    //Grid.SetRow(textBoxControl, currentRow);
+
+        //                    break;
+        //                }
+        //            case "CheckBoxModel":
+        //                {
+
+        //                    var checkBoxControl = new CheckBoxControl();
+        //                    var checkBoxControlViewModel = new CheckBoxControlViewModel(control as CheckBoxModel);
+        //                    checkBoxControl.DataContext = checkBoxControlViewModel;
+
+        //                    _uiControlsList.Add(checkBoxControl);
+
+        //                    //DataGrid.RowDefinitions.Add(new RowDefinition());
+        //                    //DataGrid.Children.Add(checkBoxControl);
+        //                    //Grid.SetRow(checkBoxControl, currentRow);
+
+        //                    break;
+        //                }
+        //            case "RadioButtonGroupModel":
+        //                {
+
+        //                    var radioButtonGroupControl = new RadioButtonGroupControl();
+        //                    var radioButtonGroupControlViewModel =
+        //                        new RadioButtonGroupControlViewModel(control as RadioButtonGroupModel);
+        //                    radioButtonGroupControl.DataContext = radioButtonGroupControlViewModel;
+
+        //                    _uiControlsList.Add(radioButtonGroupControl);
+
+        //                    //DataGrid.RowDefinitions.Add(new RowDefinition());
+        //                    //DataGrid.Children.Add(radioButtonGroupControl);
+        //                    //Grid.SetRow(radioButtonGroupControl, currentRow);
+        //                    break;
+
+        //                }
+        //        }
+
+            //    ++currentRow;
+            //}
+
+        //}
+
+      
     }
 }

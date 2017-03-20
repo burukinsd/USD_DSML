@@ -85,43 +85,22 @@ C:\Users\Ars\Downloads\tryingsomeyaml-master\WpfApplication1\WpfApplication1\obj
 C:\Users\Ars\Downloads\tryingsomeyaml-master\WpfApplication1\WpfApplication1\obj\Debug\Views\Templates\TextBoxControl.g.cs
 C:\Users\Ars\Downloads\tryingsomeyaml-master\WpfApplication1\WpfApplication1\obj\Debug\GeneratedInternalTypeHelper.g.cs
 C:\Users\Ars\Downloads\tryingsomeyaml-master\WpfApplication1\WpfApplication1\obj\Debug\Views\Templates\TextBoxControl.baml
-C:\Users\Absurdean\Downloads\Telegram Desktop\tryingsomeyaml\tryingsomeyaml\WpfApplication1\WpfApplication1\bin\Debug\WpfApplication1.exe.config
-C:\Users\Absurdean\Downloads\Telegram Desktop\tryingsomeyaml\tryingsomeyaml\WpfApplication1\WpfApplication1\obj\Debug\WpfApplication1.exe
-C:\Users\Absurdean\Downloads\Telegram Desktop\tryingsomeyaml\tryingsomeyaml\WpfApplication1\WpfApplication1\obj\Debug\WpfApplication1.pdb
-C:\Users\Absurdean\Downloads\Telegram Desktop\tryingsomeyaml\tryingsomeyaml\WpfApplication1\WpfApplication1\bin\Debug\WpfApplication1.exe
-C:\Users\Absurdean\Downloads\Telegram Desktop\tryingsomeyaml\tryingsomeyaml\WpfApplication1\WpfApplication1\bin\Debug\WpfApplication1.pdb
-C:\Users\Absurdean\Downloads\Telegram Desktop\tryingsomeyaml\tryingsomeyaml\WpfApplication1\WpfApplication1\bin\Debug\YamlDotNet.dll
-C:\Users\Absurdean\Downloads\Telegram Desktop\tryingsomeyaml\tryingsomeyaml\WpfApplication1\WpfApplication1\bin\Debug\YamlDotNet.pdb
-C:\Users\Absurdean\Downloads\Telegram Desktop\tryingsomeyaml\tryingsomeyaml\WpfApplication1\WpfApplication1\bin\Debug\YamlDotNet.xml
-C:\Users\Absurdean\Downloads\Telegram Desktop\tryingsomeyaml\tryingsomeyaml\WpfApplication1\WpfApplication1\obj\Debug\WpfApplication1.csprojResolveAssemblyReference.cache
-C:\Users\Absurdean\Downloads\Telegram Desktop\tryingsomeyaml\tryingsomeyaml\WpfApplication1\WpfApplication1\obj\Debug\MainWindow.g.cs
-C:\Users\Absurdean\Downloads\Telegram Desktop\tryingsomeyaml\tryingsomeyaml\WpfApplication1\WpfApplication1\obj\Debug\Views\Templates\TextBoxControl.g.cs
-C:\Users\Absurdean\Downloads\Telegram Desktop\tryingsomeyaml\tryingsomeyaml\WpfApplication1\WpfApplication1\obj\Debug\App.g.cs
-C:\Users\Absurdean\Downloads\Telegram Desktop\tryingsomeyaml\tryingsomeyaml\WpfApplication1\WpfApplication1\obj\Debug\GeneratedInternalTypeHelper.g.cs
-C:\Users\Absurdean\Downloads\Telegram Desktop\tryingsomeyaml\tryingsomeyaml\WpfApplication1\WpfApplication1\obj\Debug\WpfApplication1_MarkupCompile.cache
-C:\Users\Absurdean\Downloads\Telegram Desktop\tryingsomeyaml\tryingsomeyaml\WpfApplication1\WpfApplication1\obj\Debug\WpfApplication1_MarkupCompile.lref
-C:\Users\Absurdean\Downloads\Telegram Desktop\tryingsomeyaml\tryingsomeyaml\WpfApplication1\WpfApplication1\obj\Debug\MainWindow.baml
-C:\Users\Absurdean\Downloads\Telegram Desktop\tryingsomeyaml\tryingsomeyaml\WpfApplication1\WpfApplication1\obj\Debug\Views\Templates\TextBoxControl.baml
-C:\Users\Absurdean\Downloads\Telegram Desktop\tryingsomeyaml\tryingsomeyaml\WpfApplication1\WpfApplication1\obj\Debug\WpfApplication1.g.resources
-C:\Users\Absurdean\Downloads\Telegram Desktop\tryingsomeyaml\tryingsomeyaml\WpfApplication1\WpfApplication1\obj\Debug\WpfApplication1.Properties.Resources.resources
-C:\Users\Absurdean\Downloads\Telegram Desktop\tryingsomeyaml\tryingsomeyaml\WpfApplication1\WpfApplication1\obj\Debug\WpfApplication1.csproj.GenerateResource.Cache
-C:\Users\Absurdean\Downloads\USD_DSML-master\USD_DSML-master\USD\WpfApplication1\WpfApplication1\bin\Debug\WpfApplication1.exe.config
-C:\Users\Absurdean\Downloads\USD_DSML-master\USD_DSML-master\USD\WpfApplication1\WpfApplication1\obj\Debug\WpfApplication1.exe
-C:\Users\Absurdean\Downloads\USD_DSML-master\USD_DSML-master\USD\WpfApplication1\WpfApplication1\obj\Debug\WpfApplication1.pdb
-C:\Users\Absurdean\Downloads\USD_DSML-master\USD_DSML-master\USD\WpfApplication1\WpfApplication1\bin\Debug\WpfApplication1.exe
-C:\Users\Absurdean\Downloads\USD_DSML-master\USD_DSML-master\USD\WpfApplication1\WpfApplication1\bin\Debug\WpfApplication1.pdb
-C:\Users\Absurdean\Downloads\USD_DSML-master\USD_DSML-master\USD\WpfApplication1\WpfApplication1\bin\Debug\YamlDotNet.dll
-C:\Users\Absurdean\Downloads\USD_DSML-master\USD_DSML-master\USD\WpfApplication1\WpfApplication1\bin\Debug\YamlDotNet.pdb
-C:\Users\Absurdean\Downloads\USD_DSML-master\USD_DSML-master\USD\WpfApplication1\WpfApplication1\bin\Debug\YamlDotNet.xml
-C:\Users\Absurdean\Downloads\USD_DSML-master\USD_DSML-master\USD\WpfApplication1\WpfApplication1\obj\Debug\WpfApplication1.csprojResolveAssemblyReference.cache
-C:\Users\Absurdean\Downloads\USD_DSML-master\USD_DSML-master\USD\WpfApplication1\WpfApplication1\obj\Debug\MainWindow.g.cs
-C:\Users\Absurdean\Downloads\USD_DSML-master\USD_DSML-master\USD\WpfApplication1\WpfApplication1\obj\Debug\Views\Templates\TextBoxControl.g.cs
-C:\Users\Absurdean\Downloads\USD_DSML-master\USD_DSML-master\USD\WpfApplication1\WpfApplication1\obj\Debug\App.g.cs
-C:\Users\Absurdean\Downloads\USD_DSML-master\USD_DSML-master\USD\WpfApplication1\WpfApplication1\obj\Debug\GeneratedInternalTypeHelper.g.cs
-C:\Users\Absurdean\Downloads\USD_DSML-master\USD_DSML-master\USD\WpfApplication1\WpfApplication1\obj\Debug\WpfApplication1_MarkupCompile.cache
-C:\Users\Absurdean\Downloads\USD_DSML-master\USD_DSML-master\USD\WpfApplication1\WpfApplication1\obj\Debug\WpfApplication1_MarkupCompile.lref
-C:\Users\Absurdean\Downloads\USD_DSML-master\USD_DSML-master\USD\WpfApplication1\WpfApplication1\obj\Debug\MainWindow.baml
-C:\Users\Absurdean\Downloads\USD_DSML-master\USD_DSML-master\USD\WpfApplication1\WpfApplication1\obj\Debug\Views\Templates\TextBoxControl.baml
-C:\Users\Absurdean\Downloads\USD_DSML-master\USD_DSML-master\USD\WpfApplication1\WpfApplication1\obj\Debug\WpfApplication1.g.resources
-C:\Users\Absurdean\Downloads\USD_DSML-master\USD_DSML-master\USD\WpfApplication1\WpfApplication1\obj\Debug\WpfApplication1.Properties.Resources.resources
-C:\Users\Absurdean\Downloads\USD_DSML-master\USD_DSML-master\USD\WpfApplication1\WpfApplication1\obj\Debug\WpfApplication1.csproj.GenerateResource.Cache
+C:\Users\Ars\Downloads\tryingsomeyaml\WpfApplication1\WpfApplication1\bin\Debug\WpfApplication1.exe.config
+C:\Users\Ars\Downloads\tryingsomeyaml\WpfApplication1\WpfApplication1\obj\Debug\WpfApplication1.exe
+C:\Users\Ars\Downloads\tryingsomeyaml\WpfApplication1\WpfApplication1\obj\Debug\WpfApplication1.pdb
+C:\Users\Ars\Downloads\tryingsomeyaml\WpfApplication1\WpfApplication1\bin\Debug\WpfApplication1.exe
+C:\Users\Ars\Downloads\tryingsomeyaml\WpfApplication1\WpfApplication1\bin\Debug\WpfApplication1.pdb
+C:\Users\Ars\Downloads\tryingsomeyaml\WpfApplication1\WpfApplication1\bin\Debug\YamlDotNet.dll
+C:\Users\Ars\Downloads\tryingsomeyaml\WpfApplication1\WpfApplication1\bin\Debug\YamlDotNet.pdb
+C:\Users\Ars\Downloads\tryingsomeyaml\WpfApplication1\WpfApplication1\bin\Debug\YamlDotNet.xml
+C:\Users\Ars\Downloads\tryingsomeyaml\WpfApplication1\WpfApplication1\obj\Debug\WpfApplication1.csprojResolveAssemblyReference.cache
+C:\Users\Ars\Downloads\tryingsomeyaml\WpfApplication1\WpfApplication1\obj\Debug\MainWindow.g.cs
+C:\Users\Ars\Downloads\tryingsomeyaml\WpfApplication1\WpfApplication1\obj\Debug\App.g.cs
+C:\Users\Ars\Downloads\tryingsomeyaml\WpfApplication1\WpfApplication1\obj\Debug\WpfApplication1_MarkupCompile.cache
+C:\Users\Ars\Downloads\tryingsomeyaml\WpfApplication1\WpfApplication1\obj\Debug\WpfApplication1_MarkupCompile.lref
+C:\Users\Ars\Downloads\tryingsomeyaml\WpfApplication1\WpfApplication1\obj\Debug\MainWindow.baml
+C:\Users\Ars\Downloads\tryingsomeyaml\WpfApplication1\WpfApplication1\obj\Debug\WpfApplication1.g.resources
+C:\Users\Ars\Downloads\tryingsomeyaml\WpfApplication1\WpfApplication1\obj\Debug\WpfApplication1.Properties.Resources.resources
+C:\Users\Ars\Downloads\tryingsomeyaml\WpfApplication1\WpfApplication1\obj\Debug\WpfApplication1.csproj.GenerateResource.Cache
+C:\Users\Ars\Downloads\tryingsomeyaml\WpfApplication1\WpfApplication1\obj\Debug\Views\Templates\TextBoxControlView.g.cs
+C:\Users\Ars\Downloads\tryingsomeyaml\WpfApplication1\WpfApplication1\obj\Debug\Views\Templates\TextBoxControlView.baml

@@ -1,15 +1,78 @@
 form-elements:
  - type : textbox
    id:  TextBoxId1
-   caption: TextBoxLabel1
+   caption: ФИО
    size: 4
-   form-elements:
+   
+ - type : radiobuttons
+   id:  RadiobuttonsId1
+   label: Кожа и подкожная жировая клетчатка
+   orientation: Vertical
+   optionList: 
+    - не изменены
+    - изменены
+
  - type : textbox
    id:  TextBoxId2
-   caption: TextBoxLabel2
+   caption: Толщина железистого слоя до
    size: 4
-   form-elements:
+   
+ - type : checkbox
+   id:  CheckboxId1
+   label: Строение соответствует фазе менструального цикла
+   size: 4
+   
+ - type : radiobuttons
+   id:  RadiobuttonsId2
+   label: Диффузные изменения
+   orientation: Vertical
+   optionList: 
+    - умеренные диффузные фиброзные изменения железистой ткани 
+    - выраженные диффузные фиброзные изменения железистой ткани
+    - незначительные диффузные фиброзные изменения железистой ткани
+    - нет
+
  - type : textbox
-   id:  TextBoxId3
-   caption: TextBoxLabel3
+   id:  TextBoxId2
+   caption: Особенности
+   size: 4
+   
+ - type : radiobuttons
+   id:  RadiobuttonsId3
+   label: Визуализация позадисосковой области
+   orientation: Horizontal
+   optionList: 
+    - хорошая
+    - невозможная
+    - только в косых проекциях
+
+ - type : radiobuttons
+   id:  RadiobuttonsId4
+   label: Кистозные образования
+   orientation: Horizontal
+   optionList: 
+    - не выявляются
+    - выявляются
+
+ - type : radiobuttons
+   id:  RadiobuttonsId5
+   label: Очаговые образовани¤
+   orientation: Horizontal
+   optionList: 
+    - не выявляются
+    - выявляются
+
+ - type : checkbox
+   id:  CheckBoxId3
+   label: УЗИ данных за патологию молочных желез не получено
+   size: 4
+
+ - type : checkbox
+   id:  CheckBoxId4
+   label: УЗИ признаки фиброзно-кистозной болезни
+   size: 4
+   
+ - type : checkbox
+   id:  CheckBoxId3
+   label: Фиброзно-жировая инволюция
    size: 4

@@ -2,7 +2,7 @@ form-elements:
  - type : textbox
    id:  TextBoxId1
    caption: ФИО
-   size: 4
+   size: large
    
  - type : radiobuttons
    id:  RadiobuttonsId1
@@ -15,12 +15,11 @@ form-elements:
  - type : textbox
    id:  TextBoxId2
    caption: Толщина железистого слоя до
-   size: 4
+   size: small
    
  - type : checkbox
    id:  CheckboxId1
    label: Строение соответствует фазе менструального цикла
-   size: 4
    
  - type : radiobuttons
    id:  RadiobuttonsId2
@@ -33,9 +32,9 @@ form-elements:
     - нет
 
  - type : textbox
-   id:  TextBoxId2
+   id:  TextBoxId3
    caption: Особенности
-   size: 4
+   size: medium
    
  - type : radiobuttons
    id:  RadiobuttonsId3
@@ -63,16 +62,13 @@ form-elements:
     - выявляются
 
  - type : checkbox
-   id:  CheckBoxId3
+   id:  CheckBoxId2
    label: УЗИ данных за патологию молочных желез не получено
-   size: 4
 
  - type : checkbox
-   id:  CheckBoxId4
+   id:  CheckBoxId3
    label: УЗИ признаки фиброзно-кистозной болезни
-   size: 4
    
  - type : checkbox
-   id:  CheckBoxId3
+   id:  CheckBoxId4
    label: Фиброзно-жировая инволюция
-   size: 4

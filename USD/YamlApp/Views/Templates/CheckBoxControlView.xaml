@@ -7,11 +7,30 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <StackPanel Grid.ColumnSpan="{Binding Size, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Orientation="Horizontal">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="5" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="5" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="10" />
+            <ColumnDefinition Width="20" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="20" />
+        </Grid.ColumnDefinitions>
         <CheckBox
+            x:Name="CheckBox"
+            Grid.Row="1"
+            Grid.Column="1"
             Width="20"
             Height="20"
             IsChecked="{Binding State, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
-        <Label Height="30" Content="{Binding Label, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
-    </StackPanel>
+        <Label
+            x:Name="Label"
+            Grid.Row="1"
+            Grid.Column="2"
+            Height="30"
+            Content="{Binding Label, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
+    </Grid>
 </UserControl>

@@ -28,94 +28,38 @@ namespace WpfApplication1
   
     public partial class MainWindow : Window
     {
-        ////коллекция UI контролоов откуда в будущем будем брать введенную информацию
-        public List<Object> UIControlsList;
-
-        public void GenerateLayout()
-        {
-            var controls = YamlDriver.GetObjects(@"..\..\Resources\YamlConfig.yaml");
-
-            var currentRow = 0;
-
-            foreach (var control in controls)
-            {
-
-                switch (control.GetType().Name)
-                {
-                    case "TextBoxModel":
-                        {
-                            //создаем TextBoxControlView
-                            var textBoxControlView = new TextBoxControlView();
-                            var textBoxControlViewModel = new TextBoxControlViewModel(control as TextBoxModel);
-                            textBoxControlView.DataContext = textBoxControlViewModel;
-
-                            //пихаем TextBoxControlView в коллекцию
-                            UIControlsList.Add(textBoxControlView);
-
-                            //пихаем TextBoxControlView на форму
-                            DataGrid.RowDefinitions.Add(new RowDefinition());
-                            DataGrid.Children.Add(textBoxControlView);
-                            Grid.SetRow(textBoxControlView, currentRow);
-
-                            break;
-                        }
-                    case "CheckBoxModel":
-                        {
-
-                            var checkBoxControlView = new CheckBoxControlView();
-                            var checkBoxControlViewModel = new CheckBoxControlViewModel(control as CheckBoxModel);
-                            checkBoxControlView.DataContext = checkBoxControlViewModel;
-
-                            UIControlsList.Add(checkBoxControlView);
-
-                            DataGrid.RowDefinitions.Add(new RowDefinition());
-                            DataGrid.Children.Add(checkBoxControlView);
-                            Grid.SetRow(checkBoxControlView, currentRow);
-
-                            break;
-                        }
-                    case "RadioButtonGroupModel":
-                        {
-
-                            var buttonGroupControlView = new RadioButtonGroupControlView();
-                            var radioButtonGroupControlViewModel =
-                                new RadioButtonGroupControlViewModel(control as RadioButtonGroupModel);
-                            buttonGroupControlView.DataContext = radioButtonGroupControlViewModel;
-
-                           
-
-                            UIControlsList.Add(buttonGroupControlView);
-
-                            DataGrid.RowDefinitions.Add(new RowDefinition());
-                            DataGrid.Children.Add(buttonGroupControlView);
-                            Grid.SetRow(buttonGroupControlView, currentRow);
-
-                            break;
-
-                        }
-                }
-
-                ++currentRow;
-            }
-        }
 
         public MainWindow()
         {
+
+            //Dictionary<string, string> sj = new Dictionary<string, string>();
+            //ReportData report = new ReportData();
+
+            //Random rnd = new Random();
+           
+            //report.FIO = "Рахманинов Сергей Васильевич";
+            //report.TypeOfReport = "type"+rnd.Next(0,99);
+            //report.ReportDate = DateTime.Now;
+            //report.USDData.Add("FIO", "Petrov Ivan Ivanovich");
+            //report.USDData.Add("Prostuda", "Da");
+
+            //LiteDBDriver.InsertReportIntoDb(report);
+
+            
+
+
+
             InitializeComponent();
-
-            UIControlsList = new List<object>();
-
-            GenerateLayout();
-
-            DataContext = new ViewModels.MainWindowViewModel();
+            DataContext = new ViewModels.MainWindowViewModel(this);
+            
 
         }
 
 
-        private void GetData_OnClick(object sender, RoutedEventArgs e)
-        {
-           //просто для проверки того, что все данные забиндились
-           //поставить BreakPoint
-        }
+        //private void GetData_OnClick(object sender, RoutedEventArgs e)
+        //{
+        //   //просто для проверки того, что все данные забиндились
+        //   //поставить BreakPoint
+        //}
     }
 }

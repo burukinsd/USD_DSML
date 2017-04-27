@@ -1,0 +1,37 @@
+form-elements:
+ - type : textbox
+   id:  TextBoxId1
+   caption: ФИО
+   size: large
+   
+ - type : radiobuttons
+   id:  RadiobuttonsId1
+   label: Диффузные изменения
+   orientation: Vertical
+   optionList: 
+    - умеренные диффузные фиброзные изменения железистой ткани 
+    - выраженные диффузные фиброзные изменения железистой ткани
+    - незначительные диффузные фиброзные изменения железистой ткани
+    - нет
+
+ - type : textbox
+   id:  TextBoxId2
+   caption: Особенности
+   size: medium
+   
+ - type : radiobuttons
+   id:  RadiobuttonsId2
+   label: Визуализация позадисосковой области
+   orientation: Horizontal
+   optionList: 
+    - хорошая
+    - невозможная
+    - только в косых проекциях
+
+ - type : radiobuttons
+   id:  RadiobuttonsId3
+   label: Кистозные образования
+   orientation: Horizontal
+   optionList: 
+    - не выявляются
+    - выявляются

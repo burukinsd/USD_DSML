@@ -26,7 +26,6 @@ namespace WpfApplication1.Views.Templates
         {
             InitializeComponent();
         }
-
         private void RadioButton_IsChecked(object sender, RoutedEventArgs e)
         {
             var CurrentRadioButton_IsChecked = sender as RadioButton;

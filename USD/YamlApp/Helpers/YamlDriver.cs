@@ -60,7 +60,6 @@ namespace WpfApplication1.Helpers
                             {
                                 Id = item.Children[new YamlScalarNode("id")].ToString(),
                                 Label = item.Children[new YamlScalarNode("label")].ToString(),
-                                Size = item.Children[new YamlScalarNode("size")].ToString()
                             };
 
                             controls.Add(checkboxItem);

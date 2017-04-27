@@ -10,6 +10,5 @@ namespace WpfApplication1.Models
     {
         public string Id { get; set; }
         public string Label { get; set; }
-        public string Size { get; set; }
     }
 }

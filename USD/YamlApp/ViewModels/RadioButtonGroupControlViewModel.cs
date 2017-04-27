@@ -84,7 +84,7 @@ namespace WpfApplication1.ViewModels
             Label = radioButtonGroupModel.Label;
             Orientation = radioButtonGroupModel.Orientation;
             OptionList = radioButtonGroupModel.OptionList;
-
+            
             Messenger.Default.Register<RadioButtonMessage>(this,(action) => ReceiveRadioButtonMessage(action));
             //BindedData = "";
         }

@@ -32,10 +32,11 @@ namespace WpfApplication1.ViewModels
         public string Caption
         {
             get { return _caption; }
-            set {
-                    _caption = value;
-                    OnPropertyChanged("Caption");
-                }
+            set
+            {
+                _caption = value;
+                OnPropertyChanged("Caption");
+            }
         }
 
         private int _size;
@@ -43,16 +44,8 @@ namespace WpfApplication1.ViewModels
         {
             get { return _size; }
             set
-            {            
-               if (value > 0 && value <= 12)
-               {
-                    _size = value;
-               }
-               else
-               {
-                    _size = 1;
-               }
-
+            {
+                _size = value;
                 OnPropertyChanged("Size");
             }
         }
@@ -73,9 +66,22 @@ namespace WpfApplication1.ViewModels
         {
             Id = textBoxModel.Id;
             Caption = textBoxModel.Caption;
-            //не тру, доработать
-            Size = Convert.ToInt32(textBoxModel.Size);
 
+            switch (textBoxModel.Size)
+            {
+                case "small":
+                    Size = 1;
+                    break;
+                case "medium":
+                    Size = 2;
+                    break;
+                case "large":
+                    Size = 3;
+                    break;
+                default:
+                    Size = 1;
+                    break;
+            }
             //BindedData = "";
         }
     }

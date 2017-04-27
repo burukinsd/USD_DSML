@@ -35,25 +35,7 @@ namespace WpfApplication1.ViewModels
             }
         }
 
-        //private int _size;
-        //public int Size
-        //{
-        //    get { return _size; }
-        //    set
-        //    {
-        //        if (value > 0 && value <= 12)
-        //        {
-        //            _size = value;
-        //        }
-        //        else
-        //        {
-        //            _size = 1;
-        //        }
-
-        //        OnPropertyChanged("Size");
-        //    }
-        //}
-
+        
         private bool _state = false;
 
         public bool State
@@ -70,10 +52,6 @@ namespace WpfApplication1.ViewModels
         {
             Id = checkBoxModel.Id;
             Label = checkBoxModel.Label;
-            //не тру, доработать
-            //Size = Convert.ToInt32(textBoxModel.Size);
-
-            //BindedData = "";
         }
     }
 }

@@ -1,14 +1,45 @@
-﻿<UserControl x:Class="WpfApplication1.Views.Templates.TextBoxControlView"
-             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
-             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
-             xmlns:local="clr-namespace:WpfApplication1.Views.Templates"
-             mc:Ignorable="d">
+﻿<UserControl
+    x:Class="WpfApplication1.Views.Templates.TextBoxControlView"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:WpfApplication1.Views.Templates"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
 
-    <!--x:Name="{Binding Id ,Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"-->
-    <StackPanel Orientation="Horizontal" Grid.ColumnSpan="{Binding Size ,Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}">
-        <Label Content="{Binding Caption ,Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
-        <TextBox MinWidth="50" Text="{Binding BindedData ,Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
-    </StackPanel>
+    <!--  x:Name="{Binding Id ,Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"  -->
+    <!--<StackPanel Grid.ColumnSpan="{Binding Size, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Orientation="Horizontal">-->
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="5" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="5" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="10" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="20" />
+        </Grid.ColumnDefinitions>
+        <Label
+            x:Name="Label"
+            Grid.Row="1"
+            Grid.Column="1">
+            <TextBlock x:Name="LabelContent" Text="{Binding Caption, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" TextWrapping="WrapWithOverflow" />
+        </Label>
+        <TextBox
+            x:Name="TextBox"
+            Grid.Row="1"
+            Grid.Column="2"
+            Grid.ColumnSpan="{Binding Size, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
+            MinWidth="50"
+            AcceptsReturn="True"
+            MaxLines="5"
+            Text="{Binding BindedData, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
+            TextWrapping="Wrap"
+            VerticalScrollBarVisibility="Auto" />
+    </Grid>
+    <!--</StackPanel>-->
 </UserControl>

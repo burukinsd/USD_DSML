@@ -35,6 +35,12 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="DataGridFilterLibrary">
+      <HintPath>..\..\..\..\..\datagridfilterlibrary_src_vs2010\DataGridFilterLibrary\bin\Debug\DataGridFilterLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="DocX">
+      <HintPath>..\..\..\..\DocX.dll</HintPath>
+    </Reference>
     <Reference Include="GalaSoft.MvvmLight, Version=5.3.0.19026, Culture=neutral, PublicKeyToken=e7570ab207bcb616, processorArchitecture=MSIL">
       <HintPath>..\packages\MvvmLightLibs.5.3.0.0\lib\net45\GalaSoft.MvvmLight.dll</HintPath>
       <Private>True</Private>
@@ -45,6 +51,10 @@
     </Reference>
     <Reference Include="GalaSoft.MvvmLight.Platform, Version=5.3.0.19032, Culture=neutral, PublicKeyToken=5f873c45e98af8a1, processorArchitecture=MSIL">
       <HintPath>..\packages\MvvmLightLibs.5.3.0.0\lib\net45\GalaSoft.MvvmLight.Platform.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="LiteDB, Version=2.0.0.0, Culture=neutral, PublicKeyToken=4ee40123013c9f27, processorArchitecture=MSIL">
+      <HintPath>..\packages\LiteDB.2.0.0-rc\lib\net40\LiteDB.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Microsoft.Practices.ServiceLocation, Version=1.3.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
@@ -79,7 +89,15 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Helpers\DataControlClear.cs" />
+    <Compile Include="Helpers\DocDriver.cs" />
+    <Compile Include="Helpers\LayoutGenerator.cs" />
+    <Compile Include="Helpers\LiteDBDriver.cs" />
     <Compile Include="Helpers\Messages.cs" />
+    <Compile Include="Helpers\OpenYamlDialog.cs" />
+    <Compile Include="Helpers\ReportDataGenerator.cs" />
+    <Compile Include="Models\ReportData.cs" />
+    <Compile Include="Helpers\DataTypeConverter.cs" />
     <Compile Include="ViewModels\CheckBoxControlViewModel.cs" />
     <Compile Include="ViewModels\MainWindowViewModel.cs" />
     <Compile Include="ViewModels\RadioButtonGroupControlViewModel.cs" />
@@ -113,8 +131,8 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Views\Templates\RadioButtonGroupControlView.xaml">
-      <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Views\Templates\TextBoxControlView.xaml">
       <SubType>Designer</SubType>
@@ -148,14 +166,13 @@
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
     <AppDesigner Include="Properties\" />
-    <Resource Include="Resources\YamlConfig.yaml">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Resource>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Resources\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

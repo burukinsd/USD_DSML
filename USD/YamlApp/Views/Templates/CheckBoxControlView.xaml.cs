@@ -16,7 +16,7 @@ using System.Windows.Shapes;
 namespace WpfApplication1.Views.Templates
 {
     /// <summary>
-    /// Логика взаимодействия для CheckBoxControlView.xaml
+    /// Interaction logic for CheckBoxControlView.xaml
     /// </summary>
     public partial class CheckBoxControlView : UserControl
     {
